@@ -1,5 +1,7 @@
 # From .NET Core 3.0 you can use the command: `dotnet new gitignore` to generate a customizable .gitignore file
 
+src/DotnetToolExample/nupkg/
+
 *.swp
 *.*~
 project.lock.json
@@ -23,6 +25,8 @@ project.lock.json
 x64/
 x86/
 build/
+.idea/
+nuget/
 bld/
 [Bb]in/
 [Oo]bj/
