@@ -11,17 +11,23 @@ on:
       - main
   pull_request:
 
-
 jobs:
   BuildAndPush:
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
     steps:
       - uses: actions/checkout@v3
-      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+      - name: Setup .NET Core SDK 
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: ${{ matrix.dotnet-version }}
+          dotnet-version: '7.0.x'
+      - name: Configure nuget
+        run: dotnet nuget add source --username dabaus --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/dabaus/index.json"
       - name: Install dependencies
         run: dotnet restore
-      - name: Build
-        run: dotnet build --configuration Release --no-restore
+      - name: Build & Pack
+        run: dotnet pack --configuration Release --no-restore
+      - name: Push
+        run: dotnet nuget push "src/DotnetToolExample/nupkg/DotnetToolExample.*.nupkg" --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"

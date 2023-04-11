@@ -9,6 +9,13 @@
         <PackAsTool>true</PackAsTool>
         <ToolCommandName>CatPrinter</ToolCommandName>
         <PackageOutputPath>./nupkg</PackageOutputPath>
+
+        <PackageId>DotnetToolExample</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Jakob Stengård</Authors>
+        <Company>Omegapoint</Company>
+        <PackageDescription>Dotnet tool example project</PackageDescription>
+        <RepositoryUrl>https://github.com/dabaus/DotnetToolExample/</RepositoryUrl>
         
     </PropertyGroup>
 
