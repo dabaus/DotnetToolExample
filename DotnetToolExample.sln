@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetToolExample", "src\DotnetToolExample\DotnetToolExample.csproj", "{8A522A36-43AC-4ECA-AAEE-3DDF0C7C18EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A522A36-43AC-4ECA-AAEE-3DDF0C7C18EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A522A36-43AC-4ECA-AAEE-3DDF0C7C18EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A522A36-43AC-4ECA-AAEE-3DDF0C7C18EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A522A36-43AC-4ECA-AAEE-3DDF0C7C18EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
