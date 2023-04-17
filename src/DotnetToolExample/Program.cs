@@ -21,7 +21,7 @@ public static class Program
                 }
                 else
                 {
-                    Console.WriteLine("This is an example app");
+                    Console.WriteLine("This is an example dotnet tool");
                 }
             });
     }
