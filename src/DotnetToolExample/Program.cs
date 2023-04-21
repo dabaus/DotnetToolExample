@@ -18,16 +18,15 @@ public static class Program
                 if (o.IsCatOpt)
                 {
                     PrintCat();
+                    return;
                 }
-                else
-                {
-                    Console.WriteLine("This is an example dotnet tool");
-                }
+                Console.WriteLine("This is an example dotnet tool");
             });
     }
 
     public static void PrintCat()
     {
+        Console.WriteLine("Meow!");
         Console.WriteLine(" /\\_/\\");
         Console.WriteLine("( o.o )");
         Console.WriteLine(" > ^ <");

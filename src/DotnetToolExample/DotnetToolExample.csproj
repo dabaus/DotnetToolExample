@@ -11,7 +11,7 @@
         <PackageOutputPath>./nupkg</PackageOutputPath>
 
         <PackageId>DotnetToolExample</PackageId>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
         <Authors>Jakob Stengård</Authors>
         <Company>Omegapoint</Company>
         <PackageDescription>Dotnet tool example project</PackageDescription>
@@ -21,6 +21,10 @@
 
     <ItemGroup>
       <PackageReference Include="CommandLineParser" Version="2.9.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="nupkg" />
     </ItemGroup>
 
 </Project>
